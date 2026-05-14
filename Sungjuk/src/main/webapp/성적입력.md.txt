@@ -7,6 +7,7 @@ sequenceDiagram
     participant Score as 과목성적 (Entity: 성적)
 
     교수사용자->>UI: 입력버튼클릭(교수id, 학생id, 점수들)
+    activate UI
     
     UI->>Prof: 교수체크(입력id)
     activate Prof
